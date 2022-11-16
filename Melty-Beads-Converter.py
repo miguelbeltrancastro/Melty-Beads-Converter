@@ -1,5 +1,8 @@
 # Importing Image class from PIL module
 from PIL import Image
+from colormath.color_objects import sRGBColor, LabColor
+from colormath.color_conversions import convert_color
+from colormath.color_diff import delta_e_cie2000
  
 def Pixelate_image(image,pad_size):
     # Resize image
@@ -142,6 +145,12 @@ image = Image.open(r"Lenna_(test_image).png")
 pad_size = int(input("Enter the size of your pad: "))
 
 output_image_lines = Pixelate_image(image,pad_size)
+
+# Convert from RGB to Lab Color Space
+# color2_lab = convert_color(color2_rgb, LabColor);
+
+# Find the color difference
+# delta_e = delta_e_cie2000(color1_lab, color2_lab);
 
 # Shows the image in image viewer
 output_image_lines.show()

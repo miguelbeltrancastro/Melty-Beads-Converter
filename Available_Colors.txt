@@ -1,106 +1,106 @@
-[X] ------ White
-[ ] ------ Ghost White
-[ ] ------ Light Gray
-[X] ------ Gray
-[ ] ------ Pewter
-[ ] ------ Dark Grey
-[ ] ------ Charcoal
-[ ] ------ Dark Gray
-[ ] ------ Mineshaft
-[X] ------ Black
-[ ] ------ Toasted Marshmallow
-[ ] ------ Sand
-[ ] ------ Pale Skin
-[ ] ------ Fawn
-[ ] ------ Tan
-[ ] ------ Sienna
-[ ] ------ Rust
-[ ] ------ Cranapple
-[ ] ------ Red Wine
-[ ] ------ beeswax
-[ ] ------ Dandilion
-[ ] ------ marigold
-[ ] ------ Light Brown
-[ ] ------ Brown
-[ ] ------ Cream
-[ ] ------ Pastel Yellow
-[ ] ------ canary
-[ ] ------ Yellow
-[ ] ------ corn
-[ ] ------ Cheddar
-[ ] ------ Orange
-[ ] ------ Butterscotch
-[ ] ------ Blaze Orange
-[ ] ------ Hot Coral
-[ ] ------ Flamingo
-[ ] ------ Blush
-[ ] ------ Salmon
-[ ] ------ Peach
-[ ] ------ Deep Chesnut
-[ ] ------ Light Pink
-[ ] ------ Carnation Pink 
-[ ] ------ Bubble Gum
-[ ] ------ Pink
-[ ] ------ Magenta
-[ ] ------ Red
-[ ] ------ Cherry
-[ ] ------ Paprika
-[ ] ------ Bloodrose Red
-[ ] ------ Burgundy
-[ ] ------ Raspberry
-[ ] ------ Mulberry Wood
-[ ] ------ Plum
-[ ] ------ Maverick
-[ ] ------ Light Lavender
-[ ] ------ lavender
-[ ] ------ Pastel Lavender
-[ ] ------ Purple
-[ ] ------ royal purple
-[ ] ------ purple
-[ ] ------ Robins Egg
-[ ] ------ sky blue
-[ ] ------ Clear Blue
-[ ] ------ Pastel Blue
-[ ] ------ Light Blue
-[ ] ------ true blue
-[ ] ------ Cobalt
-[ ] ------ Dark Blue
-[ ] ------ Midnight
-[ ] ------ black rock
-[ ] ------ Toothpaste
-[ ] ------ light blue
-[ ] ------ Turquoise
-[ ] ------ Light Green
-[ ] ------ Medium Turquoise
-[ ] ------ Parrot Green
-[ ] ------ Green tea/pea
-[ ] ------ dark green
-[ ] ------ Pistachio
-[ ] ------ Pastel Green
-[ ] ------ Kiwi Lime
-[ ] ------ Bright Green
-[ ] ------ Green
-[ ] ------ Shamrock
-[ ] ------ Dark Green
-[ ] ------ Prickly Pear
-[ ] ------ Dark Olive
-[ ] ------ cafe latte
-[ ] ------ Sage Green
-[ ] ------ Evergreen
-[ ] ------ Brunswick green
-[ ] ------ sea mist
-[ ] ------ Celadon Green
-[ ] ------ Neon Green
-[ ] ------ Neon Yellow
-[ ] ------ Neon Pink
-[ ] ------ Neon Orange
-[ ] ------ Silver
-[ ] ------ Gold
-[ ] ------ Copper
-[ ] ------ Pearl Light Pink
-[ ] ------ Pearl Coral
-[ ] ------ Pearl Yellow
-[ ] ------ Pearl Green
-[ ] ------ Pearl Light Blue
-[ ] ------ Fairy Dust
-[ ] ------ Glow Green
+[X]------ White
+[ ]------ Ghost White
+[X]------ Light Gray
+[ ]------ Gray
+[ ]------ Pewter
+[ ]------ Dark Grey
+[ ]------ Charcoal
+[ ]------ Dark Gray
+[ ]------ Mineshaft
+[X]------ Black
+[ ]------ Toasted Marshmallow
+[ ]------ Sand
+[X]------ Pale Skin
+[ ]------ Fawn
+[ ]------ Tan
+[ ]------ Sienna
+[ ]------ Rust
+[ ]------ Cranapple
+[ ]------ Red Wine
+[ ]------ beeswax
+[ ]------ Dandilion
+[ ]------ marigold
+[ ]------ Light Brown
+[X]------ Brown
+[ ]------ Cream
+[X]------ Pastel Yellow
+[ ]------ canary
+[X]------ Yellow
+[ ]------ corn
+[ ]------ Cheddar
+[X]------ Orange
+[ ]------ Butterscotch
+[ ]------ Blaze Orange
+[ ]------ Hot Coral
+[ ]------ Flamingo
+[ ]------ Blush
+[ ]------ Salmon
+[ ]------ Peach
+[ ]------ Deep Chesnut
+[ ]------ Light Pink
+[ ]------ Carnation Pink 
+[ ]------ Bubble Gum
+[X]------ Pink
+[ ]------ Magenta
+[X]------ Red
+[ ]------ Cherry
+[ ]------ Paprika
+[ ]------ Bloodrose Red
+[ ]------ Burgundy
+[ ]------ Raspberry
+[ ]------ Mulberry Wood
+[ ]------ Plum
+[ ]------ Maverick
+[ ]------ Light Lavender
+[ ]------ lavender
+[X]------ Pastel Lavender
+[X]------ Purple
+[ ]------ royal purple
+[X]------ purple
+[ ]------ Robins Egg
+[ ]------ sky blue
+[ ]------ Clear Blue
+[X]------ Pastel Blue
+[ ]------ Light Blue
+[ ]------ true blue
+[ ]------ Cobalt
+[X]------ Dark Blue
+[ ]------ Midnight
+[ ]------ black rock
+[ ]------ Toothpaste
+[ ]------ light blue
+[ ]------ Turquoise
+[ ]------ Light Green
+[ ]------ Medium Turquoise
+[ ]------ Parrot Green
+[ ]------ Green tea/pea
+[X]------ dark green
+[ ]------ Pistachio
+[ ]------ Pastel Green
+[ ]------ Kiwi Lime
+[ ]------ Bright Green
+[X]------ Green
+[ ]------ Shamrock
+[X]------ Dark Green
+[ ]------ Prickly Pear
+[ ]------ Dark Olive
+[ ]------ cafe latte
+[ ]------ Sage Green
+[ ]------ Evergreen
+[ ]------ Brunswick green
+[ ]------ sea mist
+[ ]------ Celadon Green
+[ ]------ Neon Green
+[ ]------ Neon Yellow
+[ ]------ Neon Pink
+[ ]------ Neon Orange
+[X]------ Silver
+[ ]------ Gold
+[ ]------ Copper
+[ ]------ Pearl Light Pink
+[ ]------ Pearl Coral
+[ ]------ Pearl Yellow
+[ ]------ Pearl Green
+[ ]------ Pearl Light Blue
+[ ]------ Fairy Dust
+[ ]------ Glow Green

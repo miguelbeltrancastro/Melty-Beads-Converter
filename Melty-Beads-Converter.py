@@ -3,7 +3,7 @@ from PIL import Image
 from math import sqrt
 
 # Dictionary with all perler colors
-perler_colors = {
+perler_colors_original = {
     'White':(255,255,255),
     'Ghost White':(239,239,239),
     'Light Gray':(211,211,203),
@@ -112,6 +112,8 @@ perler_colors = {
     'Glow Green':(190,198,150),
 }
 
+perler_colors = {}
+
 def Find_best_color(pixel_color):
     closest_color=perler_colors['White']
     smaller_distance=442
@@ -157,11 +159,20 @@ def Pixelate_image(image,pad_size):
             print(str(i) + ": " + str(used_colors.count(i)/10))
     return output_image_lines
 
+def Read_setup_file():
+    with open('Available_Colors.txt') as setup_file:
+        lines = setup_file.readlines()
+        for line in lines:
+            if line[1] == "X":
+                color = (line[line.find("- ")+2:len(line)-1])
+                perler_colors[color]=perler_colors_original[color]
 
 # Opens a image in RGB mode
-image = Image.open(r"plantsvszombies.png")
+image = Image.open(r"Lenna_(test_image).png")
 
 pad_size = int(input("Enter the size of your pad: "))
+
+Read_setup_file()
 
 output_image_lines = Pixelate_image(image,pad_size)
 

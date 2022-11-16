@@ -1,36 +1,9 @@
 # Importing Image class from PIL module
 from PIL import Image
-from colormath.color_objects import sRGBColor, LabColor
-from colormath.color_conversions import convert_color
-from colormath.color_diff import delta_e_cie2000
- 
-def Pixelate_image(image,pad_size):
-    # Resize image
-    newsize = (pad_size, pad_size)
-    image_small = image.resize(newsize)
-    output_image_lines = Image.new('RGB',((pad_size*10),(pad_size*10)),"rgb(0,0,0)")
+from math import sqrt
 
-    input_x = 0
-    input_y = 0
-
-    while input_x < image_small.width * 10:
-        while input_y < image_small.height * 10:
-            output_image_lines.putpixel((input_x, input_y),image_small.getpixel((input_x / 10, input_y / 10)))
-            if input_y % 10 == 0:
-                output_image_lines.putpixel((input_x, input_y),(0,0,0))
-                input_y = input_y + 1
-            else:
-                input_y = input_y + 1
-        input_y = 0
-        if input_x % 10 == 0:
-            for i in range(image_small.height * 10):
-                output_image_lines.putpixel((input_x, i),(0,0,0))
-            input_x = input_x + 1
-        else:
-            input_x = input_x + 1
-    return output_image_lines
-
-Perler_colors = {
+# Dictionary with all perler colors
+perler_colors = {
     'White':(255,255,255),
     'Ghost White':(239,239,239),
     'Light Gray':(211,211,203),
@@ -139,18 +112,58 @@ Perler_colors = {
     'Glow Green':(190,198,150),
 }
 
+def Find_best_color(pixel_color):
+    closest_color=perler_colors['White']
+    smaller_distance=442
+    for color in perler_colors:
+        color_distance=sqrt(pow(pixel_color[0]-perler_colors[color][0],2)+pow(pixel_color[1]-perler_colors[color][1],2)+pow(pixel_color[2]-perler_colors[color][2],2))
+        if smaller_distance > color_distance:
+            closest_color =color
+            smaller_distance = color_distance
+    return closest_color
+
+def Pixelate_image(image,pad_size):
+    # Resize image
+    newsize = (pad_size, pad_size)
+    image_small = image.resize(newsize)
+    output_image_lines = Image.new('RGB',((pad_size*10),(pad_size*10)),"rgb(0,0,0)")
+
+    input_x = 0
+    input_y = 0
+
+    used_colors = []
+
+    while input_x < image_small.width * 10:
+        while input_y < image_small.height * 10:
+            closest_color = Find_best_color(image_small.getpixel((input_x / 10, input_y / 10)))
+            
+            output_image_lines.putpixel((input_x, input_y),perler_colors[closest_color])
+            if input_y % 10 == 0:
+                output_image_lines.putpixel((input_x, input_y),(0,0,0))
+                input_y = input_y + 1
+                used_colors.append(closest_color)
+            else:
+                input_y = input_y + 1
+        input_y = 0
+        if input_x % 10 == 0:
+            for i in range(image_small.height * 10):
+                output_image_lines.putpixel((input_x, i),(0,0,0))
+            input_x = input_x + 1
+        else:
+            input_x = input_x + 1
+
+    for i in perler_colors:
+        if used_colors.count(i) > 0:
+            print(str(i) + ": " + str(used_colors.count(i)/10))
+    return output_image_lines
+
+
 # Opens a image in RGB mode
-image = Image.open(r"Lenna_(test_image).png")
+image = Image.open(r"plantsvszombies.png")
 
 pad_size = int(input("Enter the size of your pad: "))
 
 output_image_lines = Pixelate_image(image,pad_size)
-
-# Convert from RGB to Lab Color Space
-# color2_lab = convert_color(color2_rgb, LabColor);
-
-# Find the color difference
-# delta_e = delta_e_cie2000(color1_lab, color2_lab);
 
 # Shows the image in image viewer
 output_image_lines.show()

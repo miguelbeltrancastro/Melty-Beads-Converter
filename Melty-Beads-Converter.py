@@ -1,6 +1,9 @@
 # Importing Image class from PIL module
 from PIL import Image
 from math import sqrt
+import sys
+
+image_file = sys.argv[1]
 
 # Dictionary with all perler colors
 perler_colors_original = {
@@ -168,7 +171,7 @@ def Read_setup_file():
                 perler_colors[color]=perler_colors_original[color]
 
 # Opens a image in RGB mode
-image = Image.open(r"Lenna_(test_image).png")
+image = Image.open(image_file)
 
 pad_size = int(input("Enter the size of your pad: "))
 
